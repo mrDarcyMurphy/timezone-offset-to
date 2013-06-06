@@ -17,5 +17,8 @@
   "author": "Mr. Darcy Murphy",
   "license": "WTFPL",
   "readmeFilename": "README.md",
-  "gitHead": "c5897cea452f35c97dbd65aaee79ee3f2ce2b98b"
+  "gitHead": "c5897cea452f35c97dbd65aaee79ee3f2ce2b98b",
+  "devDependencies": {
+    "mocha": "~1.10.0"
+  }
 }
