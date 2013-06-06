@@ -1,0 +1,21 @@
+{
+  "name": "timezone-offset-to",
+  "version": "0.0.0",
+  "description": "convert a timezone offset to a numerical value",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mrDarcyMurphy/timezone-offset-to.git"
+  },
+  "keywords": [
+    "time",
+    "timezone"
+  ],
+  "author": "Mr. Darcy Murphy",
+  "license": "WTFPL",
+  "readmeFilename": "README.md",
+  "gitHead": "c5897cea452f35c97dbd65aaee79ee3f2ce2b98b"
+}
