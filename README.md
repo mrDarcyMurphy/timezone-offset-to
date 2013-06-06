@@ -1,4 +1,4 @@
-timezone-offset
-===============
+timezone-offset-to
+==================
 
-convert a timezone offset to a numerical value
+Convert a timezone offset to a numerical value.
