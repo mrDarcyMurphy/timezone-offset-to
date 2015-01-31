@@ -6,23 +6,24 @@
 
   var parse = function(offset) {
     offset = offset || ""
-    var tz = 0
+    var ms = 0
     var tzRX = /(-?)(\d{1,2}):??(\d{2})/
     var match = offset.match(tzRX)
-    if (match) tz = parseInt(match.slice(1,4).join(''), 10)
-    return tz
+    if (match) {
+      ms = parseInt(match[2], 10)*60*60*1000 + parseInt(match[3], 10)*60*1000
+      if (match[1]) ms = ms * -1
+    }
+    return ms
   }
 
   var tzto = {
 
     minutes: function(offset) {
-      var tz = parse(offset)
-      return (((tz / 100) | 0) * 60) + tz % 100
+      return parse(offset) / 60 / 1000
     },
 
     hours: function(offset) {
-      var tz = parse(offset)
-      return ((tz / 100) | 0) + ((tz % 100) / 60)
+      return parse(offset) / 60 / 60 / 1000
     }
 
   }
